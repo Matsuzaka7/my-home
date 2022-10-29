@@ -1,1 +1,0 @@
-"use strict";(self["webpackChunkheadline"]=self["webpackChunkheadline"]||[]).push([[581],{581:function(e,n,t){t.r(n),t.d(n,{default:function(){return c}});var a=function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("div",{staticClass:"video-container"},[e._v("视频")])},i=[],l={name:"VideoIndex"},u=l,r=t(1001),s=(0,r.Z)(u,a,i,!1,null,"655d8b30",null),c=s.exports}}]);
