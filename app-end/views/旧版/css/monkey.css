@@ -1,0 +1,70 @@
+.Center {
+  color: slategray;
+}
+
+.Center h2,
+.Center h3,
+.Center h4,
+.Center h5,
+.Center h6 {
+  font-weight: 900;
+}
+
+.Center h2 {
+  font-size: 0.45rem;
+  margin-bottom: 3px;
+}
+
+.Center h3 {
+  color:tomato;
+  height: 25px;
+  border-bottom: 1px solid #3a3a3a;
+  margin: 10px 0;
+}
+
+.Center h4 {
+  text-indent: 2em;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #3a3a3a;
+  font-size: 0.3rem;
+  padding-bottom: 2px;
+}
+
+.Center h5 {
+  margin-bottom: 5px;
+}
+
+.Center button {
+  border: transparent;
+  padding: 5px 8px;
+  color: #e0e0e0;
+  background-color: #3a3a3a;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: initial;
+  margin-right: 1px;
+}
+
+.Center input {
+  display: block;
+  width: 230px;
+  height: 20px;
+  outline: none;
+  text-indent: 5px;
+  border-radius: 5px;
+  border: 0px solid #666;
+  color: white;
+  background-color: #3a3a3a;
+  padding: 2px 5px;
+  font-weight: initial;
+  margin-bottom: 5px;
+}
+
+.Center input::placeholder {
+  color: #e0e0e0;
+  font-weight: initial;
+}
+
+.Center .blue {
+  color: #56a0bd;
+}

@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.main {
+  overflow: hidden;
+}
+.main>.Maintop {
+  z-index: 999;
+  display: flex;
+  width: 100%;
+  height: 1rem;
+  color: #DFE6DF;
+  background-color:#3a3a3a;
+  box-shadow: 0 0 5px 0px rgba(0, 0, 0, .5);
+  text-align: center;
+  line-height: 1rem;
+}
+
+.main .Maintop .center {
+  flex: 1;
+}
+
+.main .Maintop .left,
+.main .Maintop .right {
+  width: 1rem;
+}
+
+.main .Maintop .iconfont {
+  color: #fff;
+}
+
+.LeftMenu {
+  display: flex;
+  flex-flow: column;
+  position: relative; 
+  top: 0px;
+  left: -85vw;
+  max-width: 75vw;
+  height: calc(100vh - 1rem);
+  color: #666;
+  background-color: #fff;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 0 0 10px -3px rgba(0, 0, 0, .5);
+  transition: left .5s;
+}
+
+.LeftMenuBg {
+  background: linear-gradient(288deg, #FFB6B9 0%, #FFB6B9 35%, #FAE3D9 calc(35% + 1px), #FAE3D9 45%, #BBDED6 calc(45% + 1px), #BBDED6 65%, #61C0BF calc(65% + 1px), #61C0BF 100%);
+}
+
+.LeftMenu .top,
+.LeftMenu .center,
+.LeftMenu .bottom {
+  border-radius: 5px;
+}
+
+.LeftMenu .top {
+  display: flex;
+  max-height: 100%;
+  max-width: 100%;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.LeftMenu .top .userName {
+  flex-wrap: wrap;
+}
+
+.LeftMenu .top img {
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 10px;
+}
+
+.LeftMenu .center {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-top: 15px;
+}
+
+.LeftMenu .center ul {
+  width: 100%;
+  overflow: hidden;
+}
+
+.LeftMenu .center ul li {
+  box-sizing: border-box;
+  width: calc(100% - 10px);
+  height: 0.9rem;
+  line-height: 1rem;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.LeftMenu .center ul li i {
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
+.LeftMenu .center ul li::after {
+  content: '\e691';
+  font-family: "iconfont";
+  position: relative;
+  top: 0;
+  right: -3.5rem;
+}
+
+.LeftMenu .bottom {
+  height: 1rem;
+  line-height: 1rem;
+  margin-left: 5px;
+  padding: 0 10px;
+}
+
+.rightFun {
+  overflow: hidden;
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  width: 0;
+  height: 0;
+  color: #666;
+  background-color: #fff;
+  box-shadow: 0 0 10px -3px rgba(0, 0, 0, 0.5);
+  transition: all .5s;
+}
+
+.rightFun ul li {
+  height: 1rem;
+  line-height: 1rem;
+  padding-left: 0.5rem;
+}
+
+.main .Center {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 1rem);
+  padding: 10px 0.5rem;
+  box-sizing: border-box;
+}
+
+.icon-shezhi {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.kaipingdonghua {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999999;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff; 
+  opacity: 1;
+  transition: all 1s;
+  
+}
+.kaipingdonghua span {
+  position: absolute;
+  margin: auto;
+  width: 0px;
+  height:0px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  background-color:#3a3a3a;
+  font-size: 1rem;
+  font-weight: 900;
+  text-align: center;
+  overflow: hidden;  
+  line-height: 100vh;
+  animation: op 0.9s infinite;
+}
+
+.kaipingdonghua div {
+  color: #e3e3e3;
+  font-weight: 900;
+  font-size: 18px;
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.75rem;
+}
+
+@keyframes op {
+  0% {
+    opacity: 0;
+  }
+  
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    width: 40px;
+    height: 40px;
+    opacity: 0.0;
+  }
+}
+
+@keyframes opEnd {
+  0% {
+    border-radius: 50%;
+  }
+  100% {
+    border-radius: 50%;
+    width: 180vh;
+    height: 180vh;
+    opacity: 0.0;
+  }
+}
+
+input{
+  display: none;
+}
+.Input + label {
+  background: #ddd;
+  border-radius: 20px;
+  height: 10px;
+}
+
+.Input:checked + label.green {
+  background: #AEDCAE;
+}
+input[type="checkbox"] + label:after, input[type="checkbox"] + label:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 20px;
+  height: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.Input:checked + label:after {
+  left: calc(100% - 20px);
+}
+.Input + label:after {
+  background: #fff;
+  border-radius: 50%;
+  top: -5px;
+  box-shadow: 0px 0px 3px #aaa;
+}
+input[type="checkbox"] + label {
+  display: inline-block;
+  width: 1rem;
+  height: 20px;
+  position: relative;
+  transition: 0.3s;
+  margin: -0.75rem 1.5rem;
+  box-sizing: border-box;
+  display: none;
+}
+
+@keyframes rotate{
+  from{
+    transform: rotate(360deg) scale3d(1,1,1) skew(90deg,90deg);
+  }
+  to{
+    transform: rotate(0deg) scale3d(0.3,0.6,0.1) skew(0deg,0deg);
+  }
+}
