@@ -50,6 +50,8 @@
 - key：用于存储 Https 的钥匙目录
 - uploads：用户上传的文件、图片都包含在这里
 - views：静态页面
+- app.js：后端服务文件 `node app.js` 启动
+- websocketServer.js：聊天ws模块
 
 
 
